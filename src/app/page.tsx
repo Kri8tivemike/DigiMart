@@ -141,11 +141,11 @@ export default function Home() {
         </section>
 
         {/* How It Works */}
-        <section className="py-20 bg-neutral">
+        <section className="py-20 bg-gray-50 dark:bg-gray-900">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">How DigiMart Works</h2>
-              <p className="text-xl text-gray-600">Simple steps to get quality food at affordable prices</p>
+              <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">How DigiMart Works</h2>
+              <p className="text-xl text-gray-600 dark:text-gray-300">Simple steps to get quality food at affordable prices</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -153,119 +153,119 @@ export default function Home() {
                 <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Search className="text-white text-xl" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">1. Select Package</h3>
-                <p className="text-gray-600">Browse available food packages and choose one that fits your needs and budget</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">1. Select Package</h3>
+                <p className="text-gray-600 dark:text-gray-300">Browse available food packages and choose one that fits your needs and budget</p>
               </div>
 
               <div className="text-center">
                 <div className="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CreditCard className="text-gray-900 text-xl" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">2. Secure Payment</h3>
-                <p className="text-gray-600">Make your contribution through our secure payment system powered by Paystack</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">2. Secure Payment</h3>
+                <p className="text-gray-600 dark:text-gray-300">Make your contribution through our secure payment system powered by Paystack</p>
               </div>
 
               <div className="text-center">
                 <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="text-white text-xl" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">3. Wait for Others</h3>
-                <p className="text-gray-600">Track progress as other contributors join until all slots are filled</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">3. Wait for Others</h3>
+                <p className="text-gray-600 dark:text-gray-300">Track progress as other contributors join until all slots are filled</p>
               </div>
 
               <div className="text-center">
                 <div className="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Truck className="text-gray-900 text-xl" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">4. Get Your Share</h3>
-                <p className="text-gray-600">Receive your portion delivered fresh to your location within Lagos</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">4. Get Your Share</h3>
+                <p className="text-gray-600 dark:text-gray-300">Receive your portion delivered fresh to your location within Lagos</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* Benefits */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-white dark:bg-gray-800">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose DigiMart?</h2>
+              <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Why Choose DigiMart?</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center p-6">
-                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Handshake className="text-primary text-xl" />
+                <div className="bg-green-100 dark:bg-green-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Handshake className="text-primary dark:text-green-400 text-xl" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Community-Powered</h3>
-                <p className="text-gray-600">Join a trusted community of food lovers sharing costs and portions</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Community-Powered</h3>
+                <p className="text-gray-600 dark:text-gray-300">Join a trusted community of food lovers sharing costs and portions</p>
               </div>
 
               <div className="text-center p-6">
-                <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Eye className="text-secondary text-xl" />
+                <div className="bg-yellow-100 dark:bg-yellow-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Eye className="text-secondary dark:text-yellow-400 text-xl" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Transparent System</h3>
-                <p className="text-gray-600">Track every step from contribution to delivery with full transparency</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Transparent System</h3>
+                <p className="text-gray-600 dark:text-gray-300">Track every step from contribution to delivery with full transparency</p>
               </div>
 
               <div className="text-center p-6">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="text-blue-600 text-xl" />
+                <div className="bg-blue-100 dark:bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPin className="text-blue-600 dark:text-blue-400 text-xl" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Lagos Delivery</h3>
-                <p className="text-gray-600">Reliable delivery service covering all areas within Lagos State</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Lagos Delivery</h3>
+                <p className="text-gray-600 dark:text-gray-300">Reliable delivery service covering all areas within Lagos State</p>
               </div>
 
               <div className="text-center p-6">
-                <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield className="text-purple-600 text-xl" />
+                <div className="bg-purple-100 dark:bg-purple-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="text-purple-600 dark:text-purple-400 text-xl" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Trusted Coordinators</h3>
-                <p className="text-gray-600">All coordinators are KYC verified for your safety and peace of mind</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Trusted Coordinators</h3>
+                <p className="text-gray-600 dark:text-gray-300">All coordinators are KYC verified for your safety and peace of mind</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* Testimonials */}
-        <section className="py-20 bg-neutral">
+        <section className="py-20 bg-gray-50 dark:bg-gray-900">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">What Our Contributors Say</h2>
+              <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">What Our Contributors Say</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="p-6">
+              <Card className="p-6 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
+                  <div className="w-12 h-12 rounded-full bg-gray-300 dark:bg-gray-600 mr-4"></div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Sarah O.</h4>
-                    <p className="text-gray-600 text-sm">Lagos Island</p>
+                    <h4 className="font-bold text-gray-900 dark:text-white">Sarah O.</h4>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">Lagos Island</p>
                   </div>
                 </div>
-                <p className="text-gray-700">"DigiMart helped me get quality beef at an affordable price. The delivery was prompt and the meat was fresh!"</p>
+                <p className="text-gray-700 dark:text-gray-300">"DigiMart helped me get quality beef at an affordable price. The delivery was prompt and the meat was fresh!"</p>
               </Card>
 
-              <Card className="p-6">
+              <Card className="p-6 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
+                  <div className="w-12 h-12 rounded-full bg-gray-300 dark:bg-gray-600 mr-4"></div>
                   <div>
-                    <h4 className="font-bold text-gray-900">David A.</h4>
-                    <p className="text-gray-600 text-sm">Ikeja</p>
+                    <h4 className="font-bold text-gray-900 dark:text-white">David A.</h4>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">Ikeja</p>
                   </div>
                 </div>
-                <p className="text-gray-700">"I love the transparency. I could track my contribution and see when others joined. Great community spirit!"</p>
+                <p className="text-gray-700 dark:text-gray-300">"I love the transparency. I could track my contribution and see when others joined. Great community spirit!"</p>
               </Card>
 
-              <Card className="p-6">
+              <Card className="p-6 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
+                  <div className="w-12 h-12 rounded-full bg-gray-300 dark:bg-gray-600 mr-4"></div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Kemi L.</h4>
-                    <p className="text-gray-600 text-sm">Victoria Island</p>
+                    <h4 className="font-bold text-gray-900 dark:text-white">Kemi L.</h4>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">Victoria Island</p>
                   </div>
                 </div>
-                <p className="text-gray-700">"Finally, a way to buy quality food without breaking the bank. The coordinator was professional and trustworthy."</p>
+                <p className="text-gray-700 dark:text-gray-300">"Finally, a way to buy quality food without breaking the bank. The coordinator was professional and trustworthy."</p>
               </Card>
             </div>
           </div>
