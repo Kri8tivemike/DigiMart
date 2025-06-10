@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { Clock, Bookmark, Fire, Search, CreditCard, Users, Truck, Handshake, Eye, MapPin, Shield } from "lucide-react"
+import { Clock, Bookmark, Flame, Search, CreditCard, Users, Truck, Handshake, Eye, MapPin, Shield } from "lucide-react"
 
 export default function Home() {
   return (
@@ -130,7 +130,7 @@ export default function Home() {
 
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-red-600 font-medium flex items-center">
-                      <Fire className="h-4 w-4 mr-1" />Almost full!
+                      <Flame className="h-4 w-4 mr-1" />Almost full!
                     </span>
                     <Button className="bg-primary hover:bg-green-700">Join Now</Button>
                   </div>
