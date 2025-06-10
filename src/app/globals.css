@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import DigiMart Design System */
-@import '../styles/design-system.css';
-
 @layer base {
   :root {
     --background: 0 0% 98%;
@@ -89,5 +86,172 @@
   /* Dark theme card background with RGB format and opacity variable */
   .dark .bg-darkCard {
     background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
+  }
+
+  /* DigiMart Design System Utility Classes */
+
+  /* Typography Classes */
+  .text-heading {
+    @apply text-gray-900 dark:text-white;
+  }
+
+  .text-subheading {
+    @apply text-gray-800 dark:text-gray-100;
+  }
+
+  .text-body {
+    @apply text-gray-600 dark:text-gray-300;
+  }
+
+  .text-caption {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+
+  .text-muted {
+    @apply text-gray-400 dark:text-gray-500;
+  }
+
+  /* Section Background Classes */
+  .section-primary {
+    @apply bg-white dark:bg-darkCard;
+  }
+
+  .section-secondary {
+    @apply bg-gray-50 dark:bg-dark;
+  }
+
+  .section-neutral {
+    @apply bg-neutral dark:bg-dark;
+  }
+
+  /* Card Component Classes */
+  .card-standard {
+    @apply bg-white dark:bg-darkCard
+           border-gray-200 dark:border-darkBorder
+           rounded-xl shadow-sm;
+  }
+
+  .card-interactive {
+    @apply card-standard
+           hover:shadow-lg
+           transition-all duration-300
+           hover:-translate-y-1;
+  }
+
+  /* Button Classes */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground
+           hover:bg-green-700
+           px-6 py-2 rounded-lg
+           font-medium transition-colors
+           focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground
+           hover:bg-yellow-400
+           px-6 py-2 rounded-lg
+           font-medium transition-colors
+           focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply border-2 border-white text-white
+           hover:bg-white hover:text-primary
+           px-6 py-2 rounded-lg
+           font-medium transition-colors
+           focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2;
+  }
+
+  .btn-ghost {
+    @apply text-gray-600 dark:text-gray-300
+           hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-800
+           px-4 py-2 rounded-lg
+           font-medium transition-colors
+           focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  /* Container Classes */
+  .container-main {
+    @apply container mx-auto px-4;
+  }
+
+  .container-section {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Section Spacing Classes */
+  .section-spacing-major {
+    @apply py-20;
+  }
+
+  .section-spacing-minor {
+    @apply py-16;
+  }
+
+  .section-spacing-sub {
+    @apply py-12;
+  }
+
+  /* Grid Layout Classes */
+  .grid-features {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8;
+  }
+
+  .grid-products {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  }
+
+  .grid-content {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-12 items-center;
+  }
+
+  .grid-testimonials {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-8;
+  }
+
+  /* Navigation Classes */
+  .header-main {
+    @apply sticky top-0 z-50 w-full
+           bg-white dark:bg-darkCard
+           shadow-sm border-b
+           border-gray-200 dark:border-darkBorder;
+  }
+
+  .header-nav {
+    @apply text-gray-600 dark:text-gray-300
+           hover:text-primary
+           px-3 py-2 text-sm font-medium
+           transition-colors;
+  }
+
+  .header-nav-active {
+    @apply text-gray-900 dark:text-white
+           hover:text-primary
+           px-3 py-2 text-sm font-medium
+           transition-colors;
+  }
+
+  .footer-main {
+    @apply bg-gray-900 dark:bg-dark
+           text-white py-16
+           border-t border-gray-700 dark:border-darkBorder;
+  }
+
+  .footer-link {
+    @apply text-gray-400 hover:text-white transition-colors;
+  }
+
+  /* Responsive Text Classes */
+  .text-responsive-xl {
+    @apply text-2xl sm:text-3xl lg:text-4xl xl:text-5xl;
+  }
+
+  .text-responsive-lg {
+    @apply text-xl sm:text-2xl lg:text-3xl;
+  }
+
+  .text-responsive-md {
+    @apply text-lg sm:text-xl lg:text-2xl;
   }
 }
