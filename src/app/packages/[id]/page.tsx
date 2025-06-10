@@ -292,9 +292,11 @@ export default function PackageDetailsPage() {
               </div>
 
               {/* CTA Button */}
-              <Button className="w-full bg-primary text-primary-foreground py-4 text-lg font-semibold hover:bg-primary/90 mb-4">
-                Join Contribution
-              </Button>
+              <Link href="/payment/success">
+                <Button className="w-full bg-primary text-primary-foreground py-4 text-lg font-semibold hover:bg-primary/90 mb-4">
+                  Join Contribution
+                </Button>
+              </Link>
               
               <div className="text-center">
                 <div className="flex items-center justify-center text-sm text-muted-foreground mb-2">
