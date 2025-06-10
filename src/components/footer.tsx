@@ -1,58 +1,64 @@
 import { Separator } from "@/components/ui/separator"
+import { Facebook, Twitter, Instagram, MessageCircle } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="border-t bg-background">
-      <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          <div className="space-y-3">
-            <h3 className="text-lg font-semibold text-primary">DigiMart</h3>
-            <p className="text-sm text-muted-foreground">
-              Your trusted digital marketplace for buying and selling digital products.
+    <footer className="bg-gray-900 text-white py-16">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 className="text-2xl font-bold text-secondary mb-4">DigiMart</h3>
+            <p className="text-gray-400 mb-4">
+              Community-powered food buying platform connecting people to share costs and get quality food delivered.
             </p>
+            <div className="flex space-x-4">
+              <Facebook className="text-secondary hover:text-white cursor-pointer" />
+              <Twitter className="text-secondary hover:text-white cursor-pointer" />
+              <Instagram className="text-secondary hover:text-white cursor-pointer" />
+              <MessageCircle className="text-secondary hover:text-white cursor-pointer" />
+            </div>
           </div>
-          
-          <div className="space-y-3">
-            <h4 className="text-sm font-semibold">Products</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">Software</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Digital Art</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Templates</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Courses</a></li>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About DigiMart</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">How It Works</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Browse Packages</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Become a Coordinator</a></li>
             </ul>
           </div>
-          
-          <div className="space-y-3">
-            <h4 className="text-sm font-semibold">Support</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">Help Center</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Contact Us</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">FAQ</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Community</a></li>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Support</h4>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">FAQs</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
-          
-          <div className="space-y-3">
-            <h4 className="text-sm font-semibold">Legal</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Cookie Policy</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Refund Policy</a></li>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Contact</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li>Lagos, Nigeria</li>
+              <li>support@digimart.ng</li>
+              <li>+234 (0) 123 456 7890</li>
             </ul>
           </div>
         </div>
-        
-        <Separator className="my-6" />
-        
+
+        <Separator className="my-8 bg-gray-700" />
+
         <div className="flex flex-col items-center justify-between space-y-2 md:flex-row md:space-y-0">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-gray-400">
             © 2024 DigiMart. All rights reserved.
           </p>
-          <div className="flex space-x-4 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">Twitter</a>
-            <a href="#" className="hover:text-primary transition-colors">LinkedIn</a>
-            <a href="#" className="hover:text-primary transition-colors">GitHub</a>
+          <div className="flex space-x-4 text-gray-400">
+            <a href="#" className="hover:text-white transition-colors">Privacy</a>
+            <a href="#" className="hover:text-white transition-colors">Terms</a>
+            <a href="#" className="hover:text-white transition-colors">Cookies</a>
           </div>
         </div>
       </div>
