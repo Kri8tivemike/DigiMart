@@ -28,26 +28,26 @@
   }
 
   .dark {
-    --background: 0 0% 3.9%;
+    --background: 210 40% 8%;
     --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
+    --card: 215 25% 17%;
     --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
+    --popover: 215 25% 17%;
     --popover-foreground: 0 0% 98%;
     --primary: 142 76% 22%;
     --primary-foreground: 0 0% 98%;
     --secondary: 45 93% 58%;
     --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 14.9%;
+    --muted: 215 20% 25%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
+    --accent: 215 20% 25%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
+    --border: 215 20% 33%;
+    --input: 215 20% 33%;
     --ring: 142 76% 22%;
-    --neutral: 0 0% 3.9%;
+    --neutral: 210 40% 8%;
   }
 }
 
@@ -67,10 +67,10 @@
     background-color: rgb(237 237 237);
   }
 
-  /* Preserve dark mode styling */
+  /* Preserve dark mode styling with new dark theme colors */
   .dark .bg-gray-50 {
     --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39 / var(--tw-bg-opacity)); /* dark:bg-gray-900 equivalent */
+    background-color: hsl(215 25% 17%); /* darkCard color */
   }
 
   /* Custom background override for transparent background */

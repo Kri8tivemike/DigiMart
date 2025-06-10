@@ -44,6 +44,9 @@ const config: Config = {
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
 			neutral: 'hsl(var(--neutral))',
+			dark: '#0F172A',
+			darkCard: '#1E293B',
+			darkBorder: '#334155',
   			chart: {
   				'1': 'hsl(var(--chart-1))',
   				'2': 'hsl(var(--chart-2))',

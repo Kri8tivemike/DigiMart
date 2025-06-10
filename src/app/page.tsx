@@ -8,7 +8,7 @@ import { Clock, Bookmark, Flame, Search, CreditCard, Users, Truck, Handshake, Ey
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-neutral">
+    <div className="min-h-screen bg-neutral dark:bg-dark">
       <Header />
       <main>
         {/* Hero Section */}
@@ -39,7 +39,7 @@ export default function Home() {
         </section>
 
         {/* Featured Packages */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-white dark:bg-darkCard">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">Available Contribution Packages</h2>
@@ -141,7 +141,7 @@ export default function Home() {
         </section>
 
         {/* How It Works */}
-        <section className="py-20 bg-gray-50 dark:bg-gray-900">
+        <section className="py-20 bg-gray-50 dark:bg-dark">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">How DigiMart Works</h2>
@@ -185,7 +185,7 @@ export default function Home() {
         </section>
 
         {/* Benefits */}
-        <section className="py-20 bg-white dark:bg-gray-800">
+        <section className="py-20 bg-white dark:bg-darkCard">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Why Choose DigiMart?</h2>
@@ -228,14 +228,14 @@ export default function Home() {
         </section>
 
         {/* Testimonials */}
-        <section className="py-20 bg-gray-50 dark:bg-gray-900">
+        <section className="py-20 bg-gray-50 dark:bg-dark">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">What Our Contributors Say</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="p-6 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
+              <Card className="p-6 bg-white dark:bg-darkCard border-gray-200 dark:border-darkBorder">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-gray-300 dark:bg-gray-600 mr-4"></div>
                   <div>
@@ -246,7 +246,7 @@ export default function Home() {
                 <p className="text-gray-700 dark:text-gray-300">"DigiMart helped me get quality beef at an affordable price. The delivery was prompt and the meat was fresh!"</p>
               </Card>
 
-              <Card className="p-6 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
+              <Card className="p-6 bg-white dark:bg-darkCard border-gray-200 dark:border-darkBorder">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-gray-300 dark:bg-gray-600 mr-4"></div>
                   <div>
@@ -257,7 +257,7 @@ export default function Home() {
                 <p className="text-gray-700 dark:text-gray-300">"I love the transparency. I could track my contribution and see when others joined. Great community spirit!"</p>
               </Card>
 
-              <Card className="p-6 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
+              <Card className="p-6 bg-white dark:bg-darkCard border-gray-200 dark:border-darkBorder">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-gray-300 dark:bg-gray-600 mr-4"></div>
                   <div>
