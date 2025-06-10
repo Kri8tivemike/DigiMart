@@ -13,13 +13,13 @@ export function Header() {
           </div>
           <div className="hidden md:block ml-10">
             <div className="flex items-baseline space-x-8">
-              <a href="#" className="text-gray-900 dark:text-white hover:text-primary px-3 py-2 text-sm font-medium">
+              <a href="/" className="text-gray-900 dark:text-white hover:text-primary px-3 py-2 text-sm font-medium">
                 Home
               </a>
               <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary px-3 py-2 text-sm font-medium">
                 How It Works
               </a>
-              <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary px-3 py-2 text-sm font-medium">
+              <a href="/packages" className="text-gray-600 dark:text-gray-300 hover:text-primary px-3 py-2 text-sm font-medium">
                 Packages
               </a>
               <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary px-3 py-2 text-sm font-medium">

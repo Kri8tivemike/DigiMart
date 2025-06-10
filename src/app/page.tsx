@@ -21,9 +21,11 @@ export default function Home() {
               <p className="text-xl mb-8 text-green-100">
                 Join a community-powered buying system. Share costs, share portions, and get quality food delivered to your doorstep in Lagos.
               </p>
-              <Button size="lg" className="bg-secondary text-gray-900 hover:bg-yellow-400 text-lg font-semibold px-8 py-4">
-                Browse Packages
-              </Button>
+              <a href="/packages">
+                <Button size="lg" className="bg-secondary text-gray-900 hover:bg-yellow-400 text-lg font-semibold px-8 py-4">
+                  Browse Packages
+                </Button>
+              </a>
             </div>
             <div className="flex justify-center">
               <div className="w-96 h-96 bg-white/10 rounded-lg flex items-center justify-center">
@@ -277,9 +279,11 @@ export default function Home() {
             <h2 className="text-4xl font-bold mb-4">Ready to Join a Contribution?</h2>
             <p className="text-xl mb-8 text-green-100">Start saving money while getting quality food delivered to your doorstep</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-secondary text-gray-900 hover:bg-yellow-400 text-lg font-semibold px-8 py-4">
-                Browse Packages
-              </Button>
+              <a href="/packages">
+                <Button size="lg" className="bg-secondary text-gray-900 hover:bg-yellow-400 text-lg font-semibold px-8 py-4">
+                  Browse Packages
+                </Button>
+              </a>
               <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg font-semibold px-8 py-4">
                 Learn More
               </Button>
