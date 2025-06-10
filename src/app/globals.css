@@ -64,7 +64,7 @@
   /* Custom light gray background override for light mode */
   .bg-gray-50 {
     --tw-bg-opacity: 1;
-    background-color: rgb(226 226 226 / var(--tw-bg-opacity));
+    background-color: rgb(237 237 237);
   }
 
   /* Preserve dark mode styling */
