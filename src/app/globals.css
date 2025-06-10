@@ -28,26 +28,26 @@
   }
 
   .dark {
-    --background: 210 40% 8%;
+    --background: 15 23 42;
     --foreground: 0 0% 98%;
-    --card: 215 25% 17%;
+    --card: 30 41 59;
     --card-foreground: 0 0% 98%;
-    --popover: 215 25% 17%;
+    --popover: 30 41 59;
     --popover-foreground: 0 0% 98%;
     --primary: 142 76% 22%;
     --primary-foreground: 0 0% 98%;
     --secondary: 45 93% 58%;
     --secondary-foreground: 0 0% 9%;
-    --muted: 215 20% 25%;
+    --muted: 51 65 85;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 215 20% 25%;
+    --accent: 51 65 85;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 215 20% 33%;
-    --input: 215 20% 33%;
+    --border: 51 65 85;
+    --input: 51 65 85;
     --ring: 142 76% 22%;
-    --neutral: 210 40% 8%;
+    --neutral: 15 23 42;
   }
 }
 
@@ -76,5 +76,10 @@
   /* Custom background override for transparent background */
   .bg-background {
     background-color: hsl(0deg 0% 98% / 0%);
+  }
+
+  /* Dark theme background with RGB format and opacity variable */
+  .dark .bg-dark {
+    background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
   }
 }
