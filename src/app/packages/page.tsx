@@ -277,6 +277,59 @@ export default function PackagesPage() {
           </div>
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 dark:bg-dark text-white py-16 border-t border-gray-700 dark:border-darkBorder">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="text-2xl font-bold text-secondary mb-4">DigiMart</h3>
+              <p className="text-gray-400 mb-4">Community-powered food buying platform connecting people to share costs and get quality food delivered.</p>
+              <div className="flex space-x-4">
+                <span>📘</span>
+                <span>🐦</span>
+                <span>📷</span>
+                <span>💬</span>
+              </div>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+              <ul className="space-y-2">
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About DigiMart</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">How It Works</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Browse Packages</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Become a Coordinator</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Support</h4>
+              <ul className="space-y-2">
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">FAQs</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Contact</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li>Lagos, Nigeria</li>
+                <li>support@digimart.ng</li>
+                <li>+234 (0) 123 456 7890</li>
+              </ul>
+            </div>
+          </div>
+          <div className="shrink-0 h-[1px] w-full my-8 bg-gray-700"></div>
+          <div className="flex flex-col items-center justify-between space-y-2 md:flex-row md:space-y-0">
+            <p className="text-gray-400">© 2024 DigiMart. All rights reserved.</p>
+            <div className="flex space-x-4 text-gray-400">
+              <a href="#" className="hover:text-white transition-colors">Privacy</a>
+              <a href="#" className="hover:text-white transition-colors">Terms</a>
+              <a href="#" className="hover:text-white transition-colors">Cookies</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
