@@ -6,16 +6,15 @@ import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Progress } from '@/components/ui/progress'
-import { 
-  Clock, 
-  Users, 
-  MapPin, 
-  Filter,
-  Search,
-  Bookmark,
-  Flame,
-  ChevronDown
-} from 'lucide-react'
+// Temporarily using simple icon placeholders to avoid lucide-react issues
+const Clock = () => <span>⏰</span>
+const Users = () => <span>👥</span>
+const MapPin = () => <span>📍</span>
+const Filter = () => <span>🔍</span>
+const Search = () => <span>🔍</span>
+const Bookmark = () => <span>🔖</span>
+const Flame = () => <span>🔥</span>
+const ChevronDown = () => <span>⬇️</span>
 
 // Mock data for packages
 const packages = [
@@ -162,7 +161,9 @@ export default function PackagesPage() {
         <div className="max-w-4xl mx-auto">
           {/* Search Bar */}
           <div className="relative mb-6">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+            <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+              <Search />
+            </div>
             <input
               type="text"
               placeholder="Search packages..."
@@ -182,9 +183,9 @@ export default function PackagesPage() {
               onClick={() => setShowFilters(!showFilters)}
               className="flex items-center gap-2"
             >
-              <Filter className="w-4 h-4" />
+              <Filter />
               Filters
-              <ChevronDown className={`w-4 h-4 transition-transform ${showFilters ? 'rotate-180' : ''}`} />
+              <ChevronDown />
             </Button>
           </div>
 
@@ -286,9 +287,7 @@ function PackageCard({ package: pkg, onToggleBookmark }: PackageCardProps) {
             onClick={() => onToggleBookmark(pkg.id)}
             className="text-gray-400 hover:text-red-600 transition-colors"
           >
-            <Bookmark 
-              className={`w-5 h-5 ${pkg.isBookmarked ? 'fill-current text-red-600' : ''}`} 
-            />
+            <Bookmark />
           </button>
         </div>
 
@@ -313,11 +312,11 @@ function PackageCard({ package: pkg, onToggleBookmark }: PackageCardProps) {
         {/* Details */}
         <div className="space-y-2 mb-4">
           <div className="flex items-center text-sm text-body">
-            <MapPin className="w-4 h-4 mr-2" />
+            <span className="mr-2"><MapPin /></span>
             {pkg.location}
           </div>
           <div className="flex items-center text-sm text-body">
-            <Users className="w-4 h-4 mr-2" />
+            <span className="mr-2"><Users /></span>
             Coordinator: {pkg.coordinator}
           </div>
         </div>
@@ -326,12 +325,12 @@ function PackageCard({ package: pkg, onToggleBookmark }: PackageCardProps) {
         <div className="flex items-center justify-between">
           {pkg.isAlmostFull ? (
             <span className="text-sm text-red-600 font-medium flex items-center">
-              <Flame className="w-4 h-4 mr-1" />
+              <span className="mr-1"><Flame /></span>
               Almost full!
             </span>
           ) : (
             <span className="text-sm text-body flex items-center">
-              <Clock className="w-4 h-4 mr-1" />
+              <span className="mr-1"><Clock /></span>
               {slotsLeft} slots left
             </span>
           )}
