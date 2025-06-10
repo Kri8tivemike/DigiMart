@@ -1,11 +1,14 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Header } from "@/components/header"
 import { ShoppingCart, Star, TrendingUp, Users } from "lucide-react"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-background to-muted">
+    <div className="min-h-screen bg-gradient-to-b from-background to-muted">
+      <Header />
+      <main>
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center">
         <div className="mx-auto max-w-4xl">
@@ -118,6 +121,7 @@ export default function Home() {
           </CardContent>
         </Card>
       </section>
-    </main>
+      </main>
+    </div>
   )
 }
