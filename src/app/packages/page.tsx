@@ -145,28 +145,34 @@ export default function PackagesPage() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-dark">
       {/* Header */}
-      <header className="bg-white dark:bg-darkCard border-b border-gray-200 dark:border-darkBorder">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            {/* Logo and Navigation */}
-            <div className="flex items-center space-x-8">
+      <header className="sticky top-0 z-50 w-full bg-white dark:bg-darkCard shadow-sm border-b border-gray-200 dark:border-darkBorder">
+        <div className="container mx-auto flex h-16 items-center justify-between px-4">
+          <div className="flex items-center">
+            <div className="flex-shrink-0">
               <h1 className="text-2xl font-bold text-primary">DigiMart</h1>
-              <nav className="hidden md:flex space-x-8">
-                <a href="/" className="text-gray-600 dark:text-gray-300 hover:text-primary">Home</a>
-                <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary">Dashboard</a>
-                <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary">Notifications</a>
-                <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary">Profile</a>
-              </nav>
             </div>
-
-            {/* User Actions */}
-            <div className="flex items-center space-x-4">
-              <div className="relative">
-                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
-                <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
+            <div className="hidden md:block ml-10">
+              <div className="flex items-baseline space-x-8">
+                <a href="/" className="text-gray-900 dark:text-white hover:text-primary px-3 py-2 text-sm font-medium">Home</a>
+                <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary px-3 py-2 text-sm font-medium">How It Works</a>
+                <a href="/packages" className="text-gray-600 dark:text-gray-300 hover:text-primary px-3 py-2 text-sm font-medium">Packages</a>
+                <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary px-3 py-2 text-sm font-medium">FAQs</a>
+                <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary px-3 py-2 text-sm font-medium">Contact</a>
               </div>
-              <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
             </div>
+          </div>
+          <div className="flex items-center space-x-4">
+            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent h-9 px-4 py-2 text-gray-600 dark:text-gray-300 hover:text-primary">
+              Login
+            </button>
+            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-9 px-4 py-2 bg-primary text-white hover:bg-green-700">
+              Register
+            </button>
+            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 w-9" type="button">
+              <span>☀️</span>
+              <span>🌙</span>
+              <span className="sr-only">Toggle theme</span>
+            </button>
           </div>
         </div>
       </header>
