@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -412,9 +413,11 @@ function PackageCard({ package: pkg, onToggleBookmark }: PackageCardProps) {
             <Clock />
             <span className="ml-1">{slotsLeft} slots left</span>
           </span>
-          <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-            View Details
-          </Button>
+          <Link href={`/packages/${pkg.id}`}>
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+              View Details
+            </Button>
+          </Link>
         </div>
       </div>
     </Card>
