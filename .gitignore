@@ -16,6 +16,10 @@ out/
 .env.test.local
 .env.production.local
 
+# Next.js
+.next/
+out/
+
 # IDE and editor files
 .vscode/
 .idea/
