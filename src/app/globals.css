@@ -72,4 +72,9 @@
     --tw-bg-opacity: 1;
     background-color: rgb(17 24 39 / var(--tw-bg-opacity)); /* dark:bg-gray-900 equivalent */
   }
+
+  /* Custom background override for transparent background */
+  .bg-background {
+    background-color: hsl(0deg 0% 98% / 0%);
+  }
 }
