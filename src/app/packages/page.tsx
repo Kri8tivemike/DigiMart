@@ -175,7 +175,7 @@ export default function PackagesPage() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ paddingTop: '4rem', paddingBottom: '8rem' }}>
         {/* Page Header */}
         <div className="flex justify-between items-center mb-8">
           <div>
