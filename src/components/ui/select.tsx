@@ -2,7 +2,10 @@
 
 import * as React from "react"
 import * as SelectPrimitive from "@radix-ui/react-select"
-import { Check, ChevronDown, ChevronUp } from "lucide-react"
+// Temporary emoji placeholders for icons
+const Check = () => <span>✓</span>
+const ChevronDown = () => <span>⬇️</span>
+const ChevronUp = () => <span>⬆️</span>
 
 import { cn } from "@/lib/utils"
 

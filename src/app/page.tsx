@@ -4,7 +4,18 @@ import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { Clock, Bookmark, Flame, Search, CreditCard, Users, Truck, Handshake, Eye, MapPin, Shield } from "lucide-react"
+// Temporary emoji placeholders for icons
+const Clock = () => <span>⏰</span>
+const Bookmark = () => <span>🔖</span>
+const Flame = () => <span>🔥</span>
+const Search = () => <span>🔍</span>
+const CreditCard = () => <span>💳</span>
+const Users = () => <span>👥</span>
+const Truck = () => <span>🚚</span>
+const Handshake = () => <span>🤝</span>
+const Eye = () => <span>👁️</span>
+const MapPin = () => <span>📍</span>
+const Shield = () => <span>🛡️</span>
 
 export default function Home() {
   return (
@@ -31,7 +42,7 @@ export default function Home() {
               <div className="w-96 h-96 bg-white/10 rounded-lg flex items-center justify-center">
                 <div className="text-center">
                   <div className="w-32 h-32 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Users className="w-16 h-16 text-white" />
+                    <Users />
                   </div>
                   <p className="text-white/80">Community Food Sharing</p>
                 </div>
@@ -153,7 +164,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Search className="text-white text-xl" />
+                  <Search />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">1. Select Package</h3>
                 <p className="text-gray-600 dark:text-gray-300">Browse available food packages and choose one that fits your needs and budget</p>
@@ -161,7 +172,7 @@ export default function Home() {
 
               <div className="text-center">
                 <div className="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CreditCard className="text-gray-900 text-xl" />
+                  <CreditCard />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">2. Secure Payment</h3>
                 <p className="text-gray-600 dark:text-gray-300">Make your contribution through our secure payment system powered by Paystack</p>
@@ -169,7 +180,7 @@ export default function Home() {
 
               <div className="text-center">
                 <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="text-white text-xl" />
+                  <Users />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">3. Wait for Others</h3>
                 <p className="text-gray-600 dark:text-gray-300">Track progress as other contributors join until all slots are filled</p>
@@ -177,7 +188,7 @@ export default function Home() {
 
               <div className="text-center">
                 <div className="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Truck className="text-gray-900 text-xl" />
+                  <Truck />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">4. Get Your Share</h3>
                 <p className="text-gray-600 dark:text-gray-300">Receive your portion delivered fresh to your location within Lagos</p>
@@ -196,7 +207,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center p-6">
                 <div className="bg-green-100 dark:bg-green-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Handshake className="text-primary dark:text-green-400 text-xl" />
+                  <Handshake />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Community-Powered</h3>
                 <p className="text-gray-600 dark:text-gray-300">Join a trusted community of food lovers sharing costs and portions</p>
@@ -204,7 +215,7 @@ export default function Home() {
 
               <div className="text-center p-6">
                 <div className="bg-yellow-100 dark:bg-yellow-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Eye className="text-secondary dark:text-yellow-400 text-xl" />
+                  <Eye />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Transparent System</h3>
                 <p className="text-gray-600 dark:text-gray-300">Track every step from contribution to delivery with full transparency</p>
@@ -212,7 +223,7 @@ export default function Home() {
 
               <div className="text-center p-6">
                 <div className="bg-blue-100 dark:bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="text-blue-600 dark:text-blue-400 text-xl" />
+                  <MapPin />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Lagos Delivery</h3>
                 <p className="text-gray-600 dark:text-gray-300">Reliable delivery service covering all areas within Lagos State</p>
@@ -220,7 +231,7 @@ export default function Home() {
 
               <div className="text-center p-6">
                 <div className="bg-purple-100 dark:bg-purple-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield className="text-purple-600 dark:text-purple-400 text-xl" />
+                  <Shield />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Trusted Coordinators</h3>
                 <p className="text-gray-600 dark:text-gray-300">All coordinators are KYC verified for your safety and peace of mind</p>

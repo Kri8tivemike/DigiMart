@@ -1,5 +1,10 @@
 import { Separator } from "@/components/ui/separator"
-import { Facebook, Twitter, Instagram, MessageCircle } from "lucide-react"
+
+// Temporary emoji placeholders for icons
+const Facebook = () => <span>📘</span>
+const Twitter = () => <span>🐦</span>
+const Instagram = () => <span>📷</span>
+const MessageCircle = () => <span>💬</span>
 
 export function Footer() {
   return (

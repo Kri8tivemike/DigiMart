@@ -2,7 +2,10 @@
 
 import * as React from "react"
 import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu"
-import { Check, ChevronRight, Circle } from "lucide-react"
+// Temporary emoji placeholders for icons
+const Check = () => <span>✓</span>
+const ChevronRight = () => <span>▶</span>
+const Circle = () => <span>○</span>
 
 import { cn } from "@/lib/utils"
 

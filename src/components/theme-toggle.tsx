@@ -1,7 +1,9 @@
 "use client"
 
 import * as React from "react"
-import { Moon, Sun } from "lucide-react"
+// Temporary emoji placeholders for icons
+const Moon = () => <span>🌙</span>
+const Sun = () => <span>☀️</span>
 import { useTheme } from "next-themes"
 
 import { Button } from "@/components/ui/button"
